@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "332306498603",
+    "project_id": "getmntd-wallet",
+    "storage_bucket": "getmntd-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332306498603:android:758ad29907655e915a166e",
+        "android_client_info": {
+          "package_name": "com.getmntd.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332306498603-hke7dj3q8345s6ovd2a0502kji05kvc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL2isSNHt9UAIje64GjuUZYpmgZZUyihI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332306498603-hke7dj3q8345s6ovd2a0502kji05kvc4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "332306498603-25p72c8unrbsblkrs772pkmq8ebcrn3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.getmntd.wallet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
