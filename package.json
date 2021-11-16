@@ -21,7 +21,15 @@
     "postinstall": "patch-package",
     "bump-patch": "npx react-native bump-version --skip-semver-for android --skip-code-for all --type patch",
     "bump-minor": "npx react-native bump-version --skip-semver-for android --skip-code-for all --type minor",
-    "bump-major": "npx react-native bump-version --skip-semver-for android --skip-code-for all --type major"
+    "bump-major": "npx react-native bump-version --skip-semver-for android --skip-code-for all --type major",
+    "android:run-dev": "react-native run-android --variant=devDebug",
+    "android:run-stage": "react-native run-android --variant=stageDebug",
+    "android:run-preprod": "react-native run-android --variant=preprodDebug",
+    "android:run-prod": "react-native run-android --variant=prodDebug",
+    "android:build-dev": "npx jetify && cd android && ./gradlew assembleDev",
+    "android:build-stage": "npx jetify && cd android && ./gradlew assembleStage",
+    "android:build-preprod": "npx jetify && cd android && ./gradlew assemblePreprod",
+    "android:build-prod": "npx jetify && cd android && ./gradlew assembleProd"
   },
   "husky": {
     "hooks": {
