@@ -25,6 +25,17 @@ target 'MakerApp' do
   # you should disable the next line.
   #use_flipper!()
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
+  # add the Firebase pod for Google Analytics
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  # or pod ‘Firebase/AnalyticsWithoutAdIdSupport’
+  # for Analytics without IDFA collection capability
+
+  # add pods for any other desired Firebase products
+  # https://firebase.google.com/docs/ios/setup#available-pods
+
   pre_install do |installer|
     $RNMBGL.pre_install(installer)
   end

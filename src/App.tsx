@@ -27,6 +27,7 @@ import SecurityScreen from './features/security/SecurityScreen'
 import AppLinkProvider from './providers/AppLinkProvider'
 import { navigationRef } from './navigation/navigator'
 import useMount from './utils/useMount'
+import { HeaderRightTape } from './components/custom_components'
 
 SplashScreen.preventAutoHideAsync().catch(() => {
   /* reloading the app might trigger some race conditions, ignore them */
@@ -139,6 +140,7 @@ const App = () => {
           <SecurityScreen
             visible={appState !== 'active' && appState !== 'unknown'}
           />
+          <HeaderRightTape />
         </BottomSheetModalProvider>
       </ThemeProvider>
     </HotspotBleProvider>

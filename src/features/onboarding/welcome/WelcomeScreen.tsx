@@ -2,12 +2,15 @@ import React, { useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigation } from '@react-navigation/native'
 import Config from 'react-native-config'
+import crashlytics from '@react-native-firebase/crashlytics'
 import Button from '../../../components/Button'
 import Text from '../../../components/Text'
 import { OnboardingNavigationProp } from '../onboardingTypes'
 import Box from '../../../components/Box'
 import TextTransform from '../../../components/TextTransform'
 import SafeAreaBox from '../../../components/SafeAreaBox'
+
+console.log('crashlytics', crashlytics)
 
 const WelcomeScreen = () => {
   const { t } = useTranslation()
@@ -60,6 +63,7 @@ const WelcomeScreen = () => {
         variant="secondary"
         title={t('account_setup.welcome.import_account')}
       />
+      <Button title="Test Crash" onPress={() => crashlytics().сrash()} />
     </SafeAreaBox>
   )
 }
